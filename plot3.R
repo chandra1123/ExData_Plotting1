@@ -3,7 +3,7 @@ x <- subset(x,Date %in% c("1/2/2007","2/2/2007"))
 x$DateTime <- strptime(paste(x$Date,x$Time),"%d/%m/%Y %T")
 
 png(file = "plot3.png", width = 480, height = 480)
-with(x,plot(DateTime, Sub_metering_1, type = "n", xlab="", ylab="Energy Sub metering"))
+with(x,plot(DateTime, Sub_metering_1, type = "n", xlab="", ylab="Energy sub metering"))
 with(x,lines(DateTime, Sub_metering_1, col="black", type="l"))
 with(x,lines(DateTime, Sub_metering_2, col="red", type="l"))
 with(x,lines(DateTime, Sub_metering_3, col="blue", type="l"))

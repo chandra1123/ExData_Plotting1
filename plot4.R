@@ -8,7 +8,7 @@ par(mfrow=c(2,2))
 with(x,plot(x$DateTime, x$Global_active_power, type = "l", ylab = "Global Acive Power", xlab=""))
 with(x,plot(x$DateTime, x$Voltage, type = "l", ylab = "Voltage", xlab="datetime"))
 
-with(x,plot(DateTime, Sub_metering_1, type = "n", xlab="", ylab="Energy Sub metering"))
+with(x,plot(DateTime, Sub_metering_1, type = "n", xlab="", ylab="Energy sub metering"))
 with(x,lines(DateTime, Sub_metering_1, col="black", type="l"))
 with(x,lines(DateTime, Sub_metering_2, col="red", type="l"))
 with(x,lines(DateTime, Sub_metering_3, col="blue", type="l"))
